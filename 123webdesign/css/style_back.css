@@ -10,6 +10,7 @@ header {
   height: 150vh;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .nav {

@@ -1,0 +1,13 @@
+:root {
+  primary: #ddd;
+  dark: #333;
+  light: #fff;
+  shadow: 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(dark);
+}

@@ -9,5 +9,126 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0px;
   padding: 0px;
-  background-color: var(dark);
+  /* background-color: var(dark); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  /* url(../img/rock-5266516_1920.jpg); */
+  /* z-index: 10; */
+}
+
+h1 {
+  font-size: 40px;
+  padding: 0px;
+  color: whitesmoke;
+}
+
+.mygrid {
+  display: grid;
+  grid-template-columns: 3fr 2.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  margin-right: 10px;
+  grid-template-rows: max-content max-content max-content;
+  grid-gap: 30px;
+  margin-top: 5px;
+  justify-items: flex-start;
+  justify-content: start;
+  column-gap: 15px;
+  vertical-align: middle;
+  row-gap: 10px;
+  outline-style: none;
+}
+
+.grid-row-1-column {
+  margin-top: 5px;
+  padding-top: 5px;
+  width: 95%;
+  border: 2px solid purple;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.grid-row-3-column {
+  margin-top: 5px;
+  padding-top: 5px;
+  text-align: right;
+  color: whitesmoke;
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+.dummy {
+  border: none;
+}
+
+.mygrid a {
+  text-decoration: none;
+  color: gray;
+  border: 3px solid purple;
+  margin-top: 15px;
+  padding: 0px px;
+  margin: 4px;
+  width: 100%;
+  align-self: center;
+  display: contents;
+  text-transform: uppercase;
+}
+
+.grid-row-1-column:hover {
+  background-color: rebeccapurple;
+  color: navajowhite;
+
+  transition-delay: 0.2s;
+}
+
+.grid-row-2-column {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  padding-left: 30px;
+}
+
+@media (max-width: 400px) {
+  .mygrid {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: auto;
+  }
+  .dummy {
+    display: none;
+  }
+
+  .grid-row-1-column {
+    grid-row: auto;
+    grid-column: 1;
+
+    /* padding-left: 30px; */
+  }
+  .grid-row-2-column {
+    grid-row: 5;
+    grid-column: 1;
+
+    /* padding-left: 30px; */
+  }
+  .grid-row-3-column {
+    grid-row: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    /* padding-left: 30px; */
+  }
+  .hr {
+    grid-column-end: 2 / span 3;
+    grid-row: auto;
+  }
+}
+
+.hr {
+  border: 2px solid rebeccapurple;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#mywrapper {
+  margin: 5px;
+  padding: 5px;
+  /* width: 100%; */
 }

@@ -34,6 +34,11 @@ h1 {
   vertical-align: middle;
   row-gap: 10px;
   outline-style: none;
+  background-image: linear-gradient(
+    rbga(0, 0, 0, 0.58),
+    rbga(0, 0, 0, 0, 0.58),
+    url(../img/rock-5266516_1920.jpg)
+  );
 }
 
 .grid-row-1-column {
@@ -75,7 +80,6 @@ h1 {
 .grid-row-1-column:hover {
   background-color: rebeccapurple;
   color: navajowhite;
-
   transition-delay: 0.2s;
 }
 
@@ -125,10 +129,4 @@ h1 {
   border: 2px solid rebeccapurple;
   grid-column: 1;
   grid-row: 2;
-}
-
-#mywrapper {
-  margin: 5px;
-  padding: 5px;
-  /* width: 100%; */
 }

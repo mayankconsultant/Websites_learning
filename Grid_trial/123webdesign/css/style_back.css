@@ -1,0 +1,63 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/rock-5266516_1920.jpg);
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 25px;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 4px;
+}
+
+.nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.about {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+  /* transform: translate(-50%, -80%); */
+  color: bisque;
+}
+
+.about h1 {
+  font-size: 40px;
+  padding: 0px;
+}
+
+.about p {
+  padding: 40px;
+  padding-left: 50%;
+  font-size: 20px;
+  text-align: left;
+}

@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+.menu-btn {
+  display: None;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #fff;
@@ -205,6 +213,7 @@ ul {
 /* follow */
 .follow {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: flex-start;
   margin: 30px 0px 30px;
@@ -247,7 +256,88 @@ ul {
 }
 
 .main-footer {
-  background: lightsteelblue;
+  background: #f2f2f2;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+
+.inner-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
   display: flex;
-  padding-left: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .home-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .xbox p {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    padding: 30px;
+    opacity: 0.9;
+    transform: translateX(-500px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    font-size: 14;
+    border-bottom: #ccc 1px solid;
+  }
+
+  .main-nav ul.main-menu li:last-child {
+    padding: 10px;
+    font-size: 14;
+    border-bottom: 0;
+  }
+
+  .main-nav ul.right-menu {
+    margin-right: 50px;
+  }
+
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+  .follow {
+    flex-direction: column;
+  }
+  .links-inner {
+    flex-direction: column;
+  }
+  .xbox .content .btn {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .content p {
+    display: none;
+  }
 }

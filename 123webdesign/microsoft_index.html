@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="css/style_microsoft.css" />
   </head>
   <body>
+    <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
     <div class="container">
       <!--navbar-->
       <nav class="main-nav">
         <img src="img/Microsoft.png" alt="Microsoft" class="logo" />
-        <ul class="main-menu">
+        <ul class="main-menu show">
           <li><a href="#">Office</a></li>
           <li><a href="#">Windows</a></li>
           <li><a href="#">Surface</a></li>
@@ -233,5 +236,8 @@
       </div>
       </footer>
     </div>
+    <script>
+       document.querySelector('.menu-btn').addEventListener('click',()=> document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
   </body>
 </html>
